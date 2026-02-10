@@ -9,7 +9,7 @@ export default function Home() {
       {/* Navbar (Minimal) */}
       <nav className="border-b border-gray-100 py-4">
         <div className="container max-w-3xl mx-auto px-6">
-          <span className="font-bold text-xl tracking-tight">Finanse<span className="text-red-600">Proste</span>.pl</span>
+          <span className="font-bold text-xl tracking-tight">grosz-do-grosza<span className="text-red-600">.vercel.app</span></span>
         </div>
       </nav>
 
