@@ -1,6 +1,6 @@
 import { content } from '@/data/content';
 import { StepList } from '@/components/StepList';
-import { ArrowRight, CheckCircle2 } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 export default function Home() {
   return (
