@@ -9,11 +9,11 @@ export const content = {
     affiliateUrl: "https://www.santander.pl/ws-konto-santander-all-2-blog/?cmids=30790093_8075356_391949351_583533631_219081426&gad_campaignid=21145720312&transactionId=458953085&uap=2223&uap2=1234",
   },
   referral: {
-    code: "7L4R2V",
+    code: "QQ76NB",
     label: "Twój kod polecający:",
     copyButtonText: "Kopiuj kod",
     copiedText: "Skopiowano!",
-    note: "Wpisz ten kod we wniosku, aby zagwarantować sobie premię.",
+    note: "Wpisz ten kod w zakładce 'Program poleceń' po zalogowaniu do banku.",
   },
   hero: {
     badge: "Promocja Bankowa 2026",
@@ -53,7 +53,7 @@ export const content = {
   },
   steps: {
     title: "Jak odebrać 900 zł premii krok po kroku",
-    intro: "Prześwietliliśmy regulamin i przygotowali prostą instrukcję. Wykonaj te 5 kroków, aby odebrać pełną premię.",
+    intro: "Prześwietliliśmy regulamin i przygotowali prostą instrukcję. Wykonaj te 4 kroki, aby odebrać pełną premię.",
     list: [
       {
         id: 1,
@@ -69,20 +69,14 @@ export const content = {
       },
       {
         id: 3,
-        title: "Wpisz kod polecający",
-        desc: "W drugim lub trzecim kroku wniosku znajdziesz pole na kod polecenia. To Twoja przepustka do pełnej puli nagród.",
+        title: "Otwórz konto i wpisz kod",
+        desc: "Po aktywacji konta zaloguj się do aplikacji lub bankowości. Wejdź w zakładkę 'Program poleceń' (menu Usługi/Oferta) i tam wpisz kod: QQ76NB. Masz na to czas do 30 dni.",
         isReferralStep: true
       },
       {
         id: 4,
         title: "Zapewnij wpływ i aktywność",
-        desc: "W miesiącu po otwarciu zapewnij wpływ min. 1000 zł (nawet przelew z własnego konta) i wykonaj płatności kartą/BLIK na min. 300 zł.",
-        isReferralStep: false
-      },
-      {
-        id: 5,
-        title: "Odbierz dodatkowe 100 zł",
-        desc: "Zarejestruj się w programie poleceń bankowości i wpisz kod polecającego. Nagroda 100 zł zostanie dodana do Twojego konta.",
+        desc: "W miesiącu po otwarciu zapewnij wpływ min. 1000 zł (nawet przelew z własnego konta) i wykonaj płatności kartą/BLIK na min. 300 zł. Pamiętaj o wykluczeniu quasi-cash!",
         isReferralStep: false
       }
     ],
