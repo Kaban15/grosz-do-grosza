@@ -1,104 +1,78 @@
-import { CheckCircle2, DollarSign, MousePointerClick, ShieldCheck, CreditCard, Smartphone, Gift, Calendar, AlertCircle } from "lucide-react";
+import { AlertTriangle, Banknote, CalendarClock, CreditCard, CheckCircle2, Smartphone } from "lucide-react";
 
 export const content = {
   meta: {
-    title: "Zgarnij 900 zł w bonusach za Konto Santander",
-    description: "800 zł premii gotówkowej + 100 zł bonu na zakupy (Biedronka/Zalando/Decathlon) lub bilety do kina. Do tego 5% na lokacie.",
+    title: "Odbierz 900 zł od Santander. Instrukcja krok po kroku.",
+    description: "Poradnik jak zdobyć 800 zł premii + 100 zł bonu w programie poleceń. Sprawdź warunki i daty.",
   },
   links: {
     affiliateUrl: "https://www.santander.pl/ws-konto-santander-all-2-blog/?cmids=30790093_8075356_391949351_583533631_219081426&gad_campaignid=21145720312&transactionId=458953085&uap=2223&uap2=1234",
   },
   referral: {
     code: "QQ76NB",
-    label: "Twój kod polecający:",
+    label: "Twój kod do bonusu 100 zł:",
     copyButtonText: "Kopiuj kod",
     copiedText: "Skopiowano!",
-    note: "Wpisz ten kod w zakładce 'Program poleceń' po zalogowaniu do banku.",
+    note: "WAŻNE: Kod wpisujesz DOPIERO PO założeniu konta, w bankowości internetowej.",
+    deadline: "Kod ważny tylko do 28.02.2026 r."
   },
   hero: {
-    badge: "Promocja Bankowa 2026",
-    title: "Zgarnij 900 zł w bonusach za Konto Santander",
-    subtitle: "800 zł premii gotówkowej + 100 zł bonu na zakupy (Biedronka/Zalando/Decathlon) lub bilety do kina. Do tego 5% na lokacie. Otwórz konto w 15 minut przez aplikację.",
-    cta: "Załóż konto i odbierz premię",
+    badge: "Aktualizacja: Luty 2026",
+    title: "Aż 900 zł premii od Santander. Mamy kompletny harmonogram.",
+    subtitle: "800 zł gotówki + 100 zł bonu (Biedronka/Zalando/Cinema City). Promocja na kod polecający kończy się szybciej niż myślisz!",
+    cta: "Przejdź do wniosku o konto",
   },
   features: {
-    title: "Dlaczego warto założyć konto Santander?",
+    title: "Prześwietlamy ofertę - konkrety:",
     items: [
       {
-        icon: DollarSign,
-        title: "800 zł premii gotówkowej",
-        desc: "Przelew na Twoje konto po spełnieniu prostych warunków. Środki od razu do dyspozycji."
+        icon: Banknote,
+        title: "900 zł łącznej premii",
+        desc: "800 zł w gotówce od banku + 100 zł w bonie za wpisanie kodu polecającego."
       },
       {
-        icon: Gift,
-        title: "100 zł bonu na zakupy",
-        desc: "Wybierz Biedronkę, Zalando, Decathlon lub bilety do kina. Bon z ważnością 6 miesięcy."
+        icon: CalendarClock,
+        title: "Ważne terminy",
+        desc: "Główna promocja do 31.03.2026, ale kod polecający musisz wpisać do 28.02.2026!"
       },
       {
         icon: CreditCard,
-        title: "0 zł za kartę",
-        desc: "Jeśli wydasz min. 300 zł kartą/BLIKiem miesięcznie, inaczej tylko 9 zł opłaty."
-      },
-      {
-        icon: ShieldCheck,
-        title: "0 zł za prowadzenie konta",
-        desc: "Jeśli wydasz min. 300 zł miesięcznie, inaczej tylko 6 zł. Dla młodych (<26 lat) bezwarunkowo 0 zł."
-      },
-      {
-        icon: Smartphone,
-        title: "Darmowe bankomaty BLIK",
-        desc: "Wypłaty ze wszystkich bankomatów w Polsce bez dodatkowych opłat."
+        title: "Konto za 0 zł",
+        desc: "Darmowe konto i karta, jeśli wydasz min. 300 zł miesięcznie (inaczej 6+9 zł). Dla osób do 26 r.ż. konto bezwarunkowo darmowe."
       }
     ]
   },
   steps: {
-    title: "Jak odebrać 900 zł premii krok po kroku",
-    intro: "Prześwietliliśmy regulamin i przygotowali prostą instrukcję. Wykonaj te 4 kroki, aby odebrać pełną premię.",
+    title: "Twoja mapa do 900 zł (Checklista)",
+    intro: "Nie odkładaj tego na później. Program poleceń kończy się 28 lutego.",
     list: [
       {
         id: 1,
-        title: "Złóż wniosek online",
-        desc: "Wybierz metodę 'na selfie' lub 'przez mObywatel'. Nie zamawiaj kuriera - to kluczowe dla szybkiej weryfikacji. Użyj dedykowanego linku poniżej.",
+        title: "Złóż wniosek (do 31.03.2026)",
+        desc: "Kliknij w przycisk poniżej i wybierz metodę 'Na selfie' lub przez 'mObywatel'. Nie zamawiaj kuriera, bo stracisz część premii.",
         highlight: true
       },
       {
         id: 2,
-        title: "Wyraź zgody marketingowe",
-        desc: "Podaj email i telefon. Zaznacz zgody marketingowe i na EKK (Elektroniczny Kanał Kontaktu). Bez tego bank nie wypłaci premii.",
-        isReferralStep: false
+        title: "Wyraź zgody (Kluczowe)",
+        desc: "Zaznacz zgody na marketing (elektroniczny i telefoniczny) oraz na EKK (Elektroniczny Kanał Kontaktu). Podaj aktualny email i numer telefonu."
       },
       {
         id: 3,
-        title: "Otwórz konto i wpisz kod",
-        desc: "Po aktywacji konta zaloguj się do aplikacji lub bankowości. Wejdź w zakładkę 'Program poleceń' (menu Usługi/Oferta) i tam wpisz kod: QQ76NB. Masz na to czas do 30 dni.",
+        title: "WPISZ KOD POLECENIA (Do 28.02.2026!)",
+        desc: "To najważniejszy krok dla bonusu 100 zł. Po aktywacji konta zaloguj się do aplikacji/serwisu. Wejdź w zakładkę 'Oferta' -> 'Program poleceń' i wpisz kod. Masz na to czas bezwzględnie do końca lutego.",
         isReferralStep: true
       },
       {
         id: 4,
-        title: "Zapewnij wpływ i aktywność",
-        desc: "W miesiącu po otwarciu zapewnij wpływ min. 1000 zł (nawet przelew z własnego konta) i wykonaj płatności kartą/BLIK na min. 300 zł. Pamiętaj o wykluczeniu quasi-cash!",
-        isReferralStep: false
-      }
-    ],
-    finalCta: "Załóż konto i odbierz 900 zł premii",
-  },
-  importantDates: {
-    title: "Ważne daty",
-    items: [
-      {
-        icon: Calendar,
-        title: "Promocja ważna do",
-        desc: "31 marca 2026 (lub do wyczerpania puli nagród)"
+        title: "Aktywność w kolejnych miesiącach",
+        desc: "W każdym z 4 kolejnych miesięcy (np. marzec, kwiecień, maj, czerwiec): 1) Zapewnij wpływ min. 1000 zł (np. z Twojego konta w innym banku). 2) Zapłać kartą/BLIKiem min. 300 zł (uwaga: Revolut i bukmacherzy się nie liczą!)."
       },
-      {
-        icon: AlertCircle,
-        title: "Program poleceń ważny do",
-        desc: "28 lutego 2026 - zarejestruj się przed tym terminem"
-      }
-    ]
+    ],
+    finalCta: "Załóż konto i zdąż przed 28.02",
   },
   footer: {
-    text: "Promocja ograniczona czasowo. Decyduje data złożenia wniosku.",
-    disclaimer: "Treści na stronie mają charakter informacyjny i promują usługi partnera. Przed założeniem konta zapoznaj się z pełnym regulaminem promocji.",
+    text: "Promocja 'Załóż konto z polecenia' trwa do 28.02.2026. Promocja 'Do 800 zł na start' trwa do 31.03.2026.",
+    disclaimer: "Pamiętaj o opłatach za konto (0 zł przy aktywności). Treść ma charakter informacyjny.",
   }
 };
