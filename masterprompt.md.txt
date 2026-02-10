@@ -1,0 +1,19 @@
+# Context
+Act as a Senior React Developer and UX Specialist. We are building a high-conversion landing page for a bank promotion (Santander) using Next.js 14 (App Router), Tailwind CSS, and Lucide React.
+
+# Goal
+Create a blog-style landing page that converts users to open a bank account using a referral link and a specific referral code.
+
+# Architecture Requirements
+1. **Data Separation:** strict requirement. Create `src/data/content.ts` containing ALL text, links, referral codes, and step data. No hardcoded text in components.
+2. **Components:** Modularize into `Hero`, `ReferralBox` (with copy-to-clipboard logic), `StepsList` (visual checklist), and `StickyCTA`.
+3. **Styling:** Use Tailwind CSS. Aesthetic should be clean, blog-like, readable, using plenty of whitespace. Primary action color: Red (Santander-like).
+4. **Tech:** Next.js App Router, TypeScript strict mode.
+
+# Content Details
+- Link: [Insert Link]
+- Code: QQ76NB
+- Tone: "It's distinctively easy", friendly, simple.
+
+# Output
+Generate the full code for `src/data/content.ts`, `src/app/page.tsx`, and necessary components.

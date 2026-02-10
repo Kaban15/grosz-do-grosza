@@ -1,0 +1,89 @@
+import { content } from '@/data/content';
+import { StepList } from '@/components/StepList';
+import { ArrowRight, CheckCircle2 } from 'lucide-react';
+
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-white font-sans text-gray-900 selection:bg-red-100">
+      
+      {/* Navbar (Minimal) */}
+      <nav className="border-b border-gray-100 py-4">
+        <div className="container max-w-3xl mx-auto px-6">
+          <span className="font-bold text-xl tracking-tight">Finanse<span className="text-red-600">Proste</span>.pl</span>
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <header className="py-16 md:py-24">
+        <div className="container max-w-3xl mx-auto px-6">
+          <span className="inline-block px-3 py-1 bg-red-50 text-red-700 text-sm font-semibold rounded-full mb-6">
+            {content.hero.badge}
+          </span>
+          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-6 leading-tight">
+            {content.hero.title}
+          </h1>
+          <p className="text-xl md:text-2xl text-gray-500 leading-relaxed mb-10">
+            {content.hero.subtitle}
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a 
+              href={content.links.affiliateUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex justify-center items-center px-8 py-4 bg-red-600 text-white font-bold rounded-xl text-lg hover:bg-red-700 transition-colors shadow-lg shadow-red-200"
+            >
+              {content.hero.cta} <ArrowRight className="ml-2" />
+            </a>
+          </div>
+        </div>
+      </header>
+
+      {/* Why Section */}
+      <section className="bg-gray-50 py-16">
+        <div className="container max-w-3xl mx-auto px-6">
+          <h2 className="text-2xl font-bold mb-10">{content.features.title}</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {content.features.items.map((item, idx) => (
+              <div key={idx} className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <item.icon className="w-8 h-8 text-red-600 mb-4" />
+                <h3 className="font-bold text-lg mb-2">{item.title}</h3>
+                <p className="text-gray-600 text-sm">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Steps Section */}
+      <section className="py-20">
+        <div className="container max-w-3xl mx-auto px-6">
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold mb-4">{content.steps.title}</h2>
+            <p className="text-xl text-gray-600">{content.steps.intro}</p>
+          </div>
+          
+          <StepList />
+
+          {/* Bottom CTA */}
+          <div className="mt-20 p-8 bg-gray-900 text-white rounded-2xl text-center">
+            <h3 className="text-2xl font-bold mb-6">Gotowy odebrać swoje 900 zł?</h3>
+            <a 
+              href={content.links.affiliateUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-8 py-4 bg-red-600 hover:bg-red-500 text-white font-bold rounded-xl text-lg transition-all transform hover:scale-105"
+            >
+              {content.steps.finalCta}
+            </a>
+            <p className="mt-4 text-sm text-gray-400">{content.footer.disclaimer}</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-8 border-t border-gray-100 text-center text-gray-400 text-sm">
+        <p>{content.footer.text}</p>
+      </footer>
+    </main>
+  );
+}
