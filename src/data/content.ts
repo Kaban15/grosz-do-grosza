@@ -3,7 +3,7 @@ import { AlertTriangle, Banknote, CalendarClock, CreditCard, CheckCircle2, Smart
 export const content = {
   meta: {
     title: "Harmonogram 900 zł od Santander. Kiedy przelewy?",
-    description: "Sprawdź dokładnie za co i kiedy otrzymasz poszczególne transze premii. Instrukcja krok po kroku.",
+    description: "Sprawdź dokładnie za co i kiedy otrzymasz poszczególne premie. Instrukcja krok po kroku.",
   },
   links: {
     affiliateUrl: "https://www.santander.pl/ws-konto-santander-all-2-blog/?cmids=30790093_8075356_391949351_583533631_219081426&gad_campaignid=21145720312&transactionId=458953085&uap=2223&uap2=1234",
@@ -18,8 +18,8 @@ export const content = {
   },
   hero: {
     badge: "Edycja: Luty 2026",
-    title: "Jak odebrać 900 zł w transzach? Dokładny harmonogram.",
-    subtitle: "Premia jest podzielona: 4 przelewy po 200 zł (gotówka) + 1 bon 100 zł (Biedronka/Zalando/Kino). Zobacz, kiedy dokładnie wpłyną na Twoje konto.",
+    title: "Zgarnij łącznie 900 zł. Minimum formalności, zero wysiłku.",
+    subtitle: "Premia to w sumie: 800 zł w gotówce (4 przelewy) + bon 100 zł. Zobacz, kiedy dokładnie pieniądze wpłyną na Twoje konto.",
     cta: "Przejdź do wniosku o konto",
   },
   features: {
@@ -38,7 +38,7 @@ export const content = {
       {
         icon: CalendarClock,
         title: "Wypłaty co miesiąc",
-        desc: "Nie czekasz pół roku na całość. Premie spływają sukcesywnie do końca miesiąca następującego po spełnieniu warunków."
+        desc: "Pieniądze spływają sukcesywnie na Twoje konto do końca miesiąca następującego po spełnieniu prostych warunków."
       }
     ]
   },
@@ -66,13 +66,13 @@ export const content = {
       {
         id: 4,
         title: "Kwiecień, Maj, Czerwiec, Lipiec (Wypłaty)",
-        desc: "Zasada jest prosta: Warunki spełniasz w miesiącu X -> Przelew 200 zł dostajesz do końca miesiąca X+1. Nagroda za kod (100 zł) wpadnie szybciej - do 5 dni po spełnieniu warunków płatności (300 zł)."
+        desc: "To proste: Warunki spełniasz w miesiącu X -> Przelew 200 zł dostajesz do końca miesiąca X+1. Nagroda za kod (100 zł) wpadnie szybciej - do 5 dni po spełnieniu warunków płatności (300 zł)."
       },
     ],
     finalCta: "Zacznij teraz i odbierz pierwszą kasę",
   },
   footer: {
-    text: "Pamiętaj: Promocja z kodem kończy się 28.02.2026. Główna promocja trwa do 31.03.2026.",
+    text: "Pamiętaj: Promocja z kodem kończy się 28.02.2026. Główna promocja trwa do 31.03.2026. Wskazówka: Po odebraniu ostatniej premii możesz bezpłatnie zamknąć konto, jeśli nie będziesz chciał z niego dalej korzystać.",
     disclaimer: "Informacje oparte na regulaminie promocji 'Do 800 zł na start'.",
   }
 };
