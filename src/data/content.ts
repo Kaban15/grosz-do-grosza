@@ -1,4 +1,4 @@
-import { AlertTriangle, Banknote, CalendarClock, CreditCard, CheckCircle2, Smartphone, Gift, UserCheck } from "lucide-react";
+import { AlertTriangle, Banknote, CalendarClock, CreditCard, CheckCircle2, Smartphone, Gift, UserCheck, Printer, CheckSquare, Coins } from "lucide-react";
 
 export const content = {
   meta: {
@@ -82,5 +82,37 @@ export const content = {
       "Mieszkasz w Polsce.",
       "Nie masz konta w Santanderze (osobistego w PLN) co najmniej od 01.02.2024 r. (dotyczy też współwłaścicieli)."
     ]
+  },
+  checklist: {
+    header: "LISTA ZADAŃ: PROMOCJA SANTANDER (900 ZŁ)",
+    subheader: "Edycja: Luty / Marzec 2026",
+    rewards: "800 zł premii pieniężnej (4x 200 zł) + 100 zł bon (Program Poleceń)",
+    steps: [
+      {
+        title: "START (Wniosek do 31.03.2026)",
+        items: [
+          "Złóż wniosek (wyraź zgody)",
+          "Podpisz umowę (selfie/mObywatel)"
+        ]
+      },
+      {
+        title: "PROGRAM POLECEŃ (Kod do 28.02.2026)",
+        items: [
+          "Zarejestruj się w programie poleceń",
+          "Wpisz kod: QQ76NB",
+          "Wykonaj płatności min. 300 zł"
+        ]
+      },
+      {
+        title: "ZADANIA MIESIĘCZNE",
+        tableRows: [
+          { month: "Miesiąc 1", deposit: 1000, payments: 300 },
+          { month: "Miesiąc 2", deposit: 1000, payments: 300 },
+          { month: "Miesiąc 3", deposit: 1000, payments: 300 },
+          { month: "Miesiąc 4", deposit: 1000, payments: 300 }
+        ]
+      }
+    ],
+    footer: "Wypłata nagród: do końca kolejnego miesiąca po spełnieniu warunków. Bon 100 zł w ciągu 5 dni od spełnienia warunków płatności."
   }
 };

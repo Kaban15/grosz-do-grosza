@@ -1,5 +1,6 @@
 import { content } from '@/data/content';
 import { StepList } from '@/components/StepList';
+import Checklist from '@/components/Checklist';
 import { ArrowRight, UserCheck } from 'lucide-react';
 
 export default function Home() {
@@ -77,6 +78,17 @@ export default function Home() {
             </a>
             <p className="mt-4 text-sm text-gray-400">{content.footer.disclaimer}</p>
           </div>
+        </div>
+      </section>
+
+      {/* Checklist Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container max-w-4xl mx-auto px-6">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Lista Zadań do Wydruku</h2>
+            <p className="text-xl text-gray-600">Pobierz interaktywną checklistę i śledź postępy promocji</p>
+          </div>
+          <Checklist />
         </div>
       </section>
 

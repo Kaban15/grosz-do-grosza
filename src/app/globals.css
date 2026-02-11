@@ -1,3 +1,67 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Print Styles */
+@media print {
+  body > *:not(.printable-area) {
+    display: none !important;
+  }
+  
+  .printable-area {
+    display: block !important;
+    width: 100% !important;
+    height: 100vh !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .printable-area > div {
+    width: 100% !important;
+    height: 100vh !important;
+    margin: 0 !important;
+    padding: 20px !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* Ensure black text for printing */
+  .printable-area * {
+    color: black !important;
+    background: white !important;
+  }
+  
+  /* Remove shadows and borders for clean print */
+  .printable-area .shadow-lg {
+    box-shadow: none !important;
+  }
+  
+  .printable-area .border-gray-300 {
+    border-color: black !important;
+  }
+  
+  .printable-area .border-red-600 {
+    border-color: black !important;
+  }
+  
+  .printable-area .bg-red-50 {
+    background: white !important;
+    border: 1px solid black !important;
+  }
+  
+  .printable-area .text-red-700 {
+    color: black !important;
+  }
+  
+  .printable-area .bg-gray-50 {
+    background: white !important;
+  }
+  
+  .printable-area .hover\:bg-gray-50:hover {
+    background: white !important;
+  }
+  
+  /* Hide print button */
+  .print-hidden {
+    display: none !important;
+  }
+}
