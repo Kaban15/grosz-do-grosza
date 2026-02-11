@@ -1,6 +1,7 @@
 import { content } from '@/data/content';
 import { StepList } from '@/components/StepList';
 import Checklist from '@/components/Checklist';
+import TrackedLink from '@/components/TrackedLink';
 import { ArrowRight, UserCheck } from 'lucide-react';
 
 export default function Home() {
@@ -27,14 +28,13 @@ export default function Home() {
             {content.hero.subtitle}
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a 
+            <TrackedLink 
               href={content.links.affiliateUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+              eventName="hero_cta_click"
               className="inline-flex justify-center items-center px-8 py-4 bg-red-600 text-white font-bold rounded-xl text-lg hover:bg-red-700 transition-colors shadow-lg shadow-red-200"
             >
               {content.hero.cta} <ArrowRight className="ml-2" />
-            </a>
+            </TrackedLink>
           </div>
         </div>
       </header>
@@ -68,14 +68,13 @@ export default function Home() {
           {/* Bottom CTA */}
           <div className="mt-20 p-8 bg-gray-900 text-white rounded-2xl text-center">
             <h3 className="text-2xl font-bold mb-6">Gotowy odebrać swoje 900 zł?</h3>
-            <a 
+            <TrackedLink 
               href={content.links.affiliateUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+              eventName="footer_cta_click"
               className="inline-block px-8 py-4 bg-red-600 hover:bg-red-500 text-white font-bold rounded-xl text-lg transition-all transform hover:scale-105"
             >
               {content.steps.finalCta}
-            </a>
+            </TrackedLink>
             <p className="mt-4 text-sm text-gray-400">{content.footer.disclaimer}</p>
           </div>
         </div>
