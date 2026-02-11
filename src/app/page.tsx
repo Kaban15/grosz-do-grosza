@@ -2,16 +2,22 @@ import { content } from '@/data/content';
 import { StepList } from '@/components/StepList';
 import Checklist from '@/components/Checklist';
 import TrackedLink from '@/components/TrackedLink';
-import { ArrowRight, UserCheck, AlertTriangle } from 'lucide-react';
+import { ArrowRight, UserCheck, AlertTriangle, Wallet } from 'lucide-react';
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-white font-sans text-gray-900 selection:bg-red-100">
       
-      {/* Navbar (Minimal) */}
-      <nav className="border-b border-gray-100 py-4">
+      {/* Navbar (Professional) */}
+      <nav className="bg-white/80 backdrop-blur-md border-b border-gray-100 py-4 sticky top-0 z-50">
         <div className="container max-w-3xl mx-auto px-6">
-          <span className="font-bold text-xl tracking-tight">grosz-do-grosza<span className="text-red-600">.vercel.app</span></span>
+          <div className="flex items-center gap-2">
+            <Wallet className="w-6 h-6 text-red-600" />
+            <div>
+              <h1 className="font-bold text-xl text-gray-900 tracking-tight">Grosz do Grosza</h1>
+              <p className="text-xs text-gray-500 font-medium">Sprawdzone Promocje Bankowe</p>
+            </div>
+          </div>
         </div>
       </nav>
 
