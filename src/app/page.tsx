@@ -83,10 +83,6 @@ export default function Home() {
       {/* Checklist Section */}
       <section className="py-16 bg-gray-50">
         <div className="container max-w-4xl mx-auto px-6">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Lista Zadań do Wydruku</h2>
-            <p className="text-xl text-gray-600">Pobierz interaktywną checklistę i śledź postępy promocji</p>
-          </div>
           <Checklist />
         </div>
       </section>

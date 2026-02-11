@@ -18,8 +18,8 @@ export const content = {
   },
   hero: {
     badge: "Edycja: Luty 2026",
-    title: "Zgarnij łącznie 900 zł. Minimum formalności, zero wysiłku.",
-    subtitle: "Premia to w sumie: 800 zł w gotówce (4 przelewy) + bon 100 zł. Zobacz, kiedy dokładnie pieniądze wpłyną na Twoje konto.",
+    title: "Zgarnij łącznie 900 zł za Konto Santander. Minimum formalności.",
+    subtitle: "Promocja Konta Santander to w sumie: 800 zł w gotówce (4 przelewy) + bon 100 zł. Zobacz, kiedy dokładnie pieniądze wpłyną na Twoje konto.",
     cta: "Przejdź do wniosku o konto",
   },
   features: {
@@ -28,7 +28,7 @@ export const content = {
       {
         icon: Banknote,
         title: "4x 200 zł (Gotówka)",
-        desc: "Za aktywność w 4 kolejnych miesiącach po otwarciu konta. Wypłata co miesiąc na konto."
+        desc: "Za aktywność na Koncie Santander w 4 kolejnych miesiącach po otwarciu konta. Wypłata co miesiąc na konto."
       },
       {
         icon: Gift,
@@ -48,7 +48,7 @@ export const content = {
     list: [
       {
         id: 1,
-        title: "Luty: Złóż wniosek i otwórz konto",
+        title: "Luty: Złóż wniosek o Konto Santander",
         desc: "Pamiętaj o wyrażeniu zgód marketingowych i EKK. Wybierz metodę na selfie lub mObywatel (kurier wyklucza z promocji!).",
         highlight: true
       },
