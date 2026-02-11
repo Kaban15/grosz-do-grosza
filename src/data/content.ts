@@ -1,4 +1,4 @@
-import { AlertTriangle, Banknote, CalendarClock, CreditCard, CheckCircle2, Smartphone, Gift } from "lucide-react";
+import { AlertTriangle, Banknote, CalendarClock, CreditCard, CheckCircle2, Smartphone, Gift, UserCheck } from "lucide-react";
 
 export const content = {
   meta: {
@@ -74,5 +74,13 @@ export const content = {
   footer: {
     text: "Pamiętaj: Promocja z kodem kończy się 28.02.2026. Główna promocja trwa do 31.03.2026. Wskazówka: Po odebraniu ostatniej premii możesz bezpłatnie zamknąć konto, jeśli nie będziesz chciał z niego dalej korzystać.",
     disclaimer: "Informacje oparte na regulaminie promocji 'Do 800 zł na start'.",
+  },
+  eligibility: {
+    title: "Dla kogo promocja?",
+    items: [
+      "Masz polskie obywatelstwo i polski dowód osobisty.",
+      "Mieszkasz w Polsce.",
+      "Nie masz konta w Santanderze (osobistego w PLN) co najmniej od 01.02.2024 r. (dotyczy też współwłaścicieli)."
+    ]
   }
 };

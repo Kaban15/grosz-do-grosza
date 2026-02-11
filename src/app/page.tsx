@@ -1,6 +1,6 @@
 import { content } from '@/data/content';
 import { StepList } from '@/components/StepList';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, UserCheck } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -76,6 +76,23 @@ export default function Home() {
               {content.steps.finalCta}
             </a>
             <p className="mt-4 text-sm text-gray-400">{content.footer.disclaimer}</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Eligibility Section */}
+      <section className="bg-blue-50 py-16">
+        <div className="container max-w-3xl mx-auto px-6">
+          <h2 className="text-2xl font-bold mb-10 text-center">{content.eligibility.title}</h2>
+          <div className="bg-white rounded-2xl shadow-sm border border-blue-100 p-8">
+            <ul className="space-y-4">
+              {content.eligibility.items.map((item, idx) => (
+                <li key={idx} className="flex items-start gap-3">
+                  <UserCheck className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700 leading-relaxed">{item}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
