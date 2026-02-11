@@ -114,5 +114,16 @@ export const content = {
       }
     ],
     footer: "Wypłata nagród: do końca kolejnego miesiąca po spełnieniu warunków. Bon 100 zł w ciągu 5 dni od spełnienia warunków płatności."
+  },
+  consents: {
+    title: "⚠️ Ważne: Wymagane Zgody we Wniosku",
+    intro: "Aby otrzymać premię, we wniosku o konto musisz zaznaczyć konkretne zgody. Bez tego bank nie wypłaci nagrody!",
+    items: [
+      "Wyraź zgodę na EKK (Elektroniczny Kanał Kontaktu) - sprawdzisz to w ustawieniach po zalogowaniu.",
+      "Wyraź zgodę na kontakt telefoniczny i elektroniczny w celach marketingowych.",
+      "Nie zgłaszaj sprzeciwu wobec przetwarzania danych przez bank w celach marketingowych.",
+      "Podaj aktualny numer telefonu komórkowego i adres email.",
+      "Zaakceptuj pliki cookies (ważne dla poprawnego zapisu wniosku z promocji)."
+    ]
   }
 };

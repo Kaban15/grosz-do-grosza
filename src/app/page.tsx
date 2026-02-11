@@ -2,7 +2,7 @@ import { content } from '@/data/content';
 import { StepList } from '@/components/StepList';
 import Checklist from '@/components/Checklist';
 import TrackedLink from '@/components/TrackedLink';
-import { ArrowRight, UserCheck } from 'lucide-react';
+import { ArrowRight, UserCheck, AlertTriangle } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -96,6 +96,29 @@ export default function Home() {
               {content.eligibility.items.map((item, idx) => (
                 <li key={idx} className="flex items-start gap-3">
                   <UserCheck className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700 leading-relaxed">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Consents Section */}
+      <section className="bg-yellow-50 py-16">
+        <div className="container max-w-3xl mx-auto px-6">
+          <div className="bg-white rounded-2xl shadow-sm border border-yellow-200 p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <AlertTriangle className="w-6 h-6 text-yellow-600 flex-shrink-0" />
+              <h2 className="text-2xl font-bold text-gray-900">{content.consents.title}</h2>
+            </div>
+            <p className="text-lg text-gray-700 mb-6">{content.consents.intro}</p>
+            <ul className="space-y-4">
+              {content.consents.items.map((item, idx) => (
+                <li key={idx} className="flex items-start gap-3">
+                  <span className="w-6 h-6 bg-yellow-100 text-yellow-800 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 mt-0.5">
+                    {idx + 1}
+                  </span>
                   <span className="text-gray-700 leading-relaxed">{item}</span>
                 </li>
               ))}
